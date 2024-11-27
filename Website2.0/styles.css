@@ -1,0 +1,158 @@
+/* Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.name-input {
+  margin-bottom: 20px;
+}
+
+.name-input input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.name-input button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+/* Table Styles for user list */
+ul {
+  list-style-type: none;
+}
+
+#userList {
+  margin-top: 20px;
+}
+
+/* Group Styles */
+.group {
+  margin-bottom: 30px;
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  font-size: 1.1rem;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 250px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.dropdown:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.payment-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.paypal-button,
+.venmo-button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.paypal-button {
+  background-color: #0070ba;
+  color: white;
+}
+
+.paypal-button:hover {
+  background-color: #005b8f;
+  transform: translateY(-2px);
+}
+
+.venmo-button {
+  background-color: #2d7a99;
+  color: white;
+}
+
+.venmo-button:hover {
+  background-color: #246d82;
+  transform: translateY(-2px);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
