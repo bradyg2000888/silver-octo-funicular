@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fastbarracuda3 Breaks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Fastbarracuda3 Breaks</h1>
+      <p>Select a team(s). Proceed with selection. Continue with team selections or proceed with payment.</p>
+
+      <!-- Name input section -->
+      <div class="name-input">
+        <label for="userName">Enter your name:</label>
+        <input type="text" id="userName" placeholder="Your name here" />
+        <button id="saveName">Save Name</button>
+      </div>
+    </header>
+
+    <!-- List of users who have selected items -->
+    <h3>Users Who Have Selected Items</h3>
+    <ul id="userList"></ul>
+
+    <!-- Group 1 with 30 items -->
+    <div class="group">
+      <h2>Break 23</h2>
+      <select id="group1" class="dropdown">
+        <!-- The dropdown options will be populated here -->
+      </select>
+      <div class="payment-summary">
+        <h3>Selected Teams</h3>
+        <ul id="selected-teams"></ul>
+        <p id="total-cost">Total Cost: $0</p>
+      </div>
+      <div class="payment-buttons">
+        <button class="paypal-button">Pay with PayPal</button>
+        <button class="venmo-button">Pay with Venmo</button>
+      </div>
+    </div>
+
+    <!-- Modal for Payment Confirmation -->
+    <div id="paymentModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="paymentMessage"></p>
+        <a id="paymentLink" href="" target="_blank">Proceed to Payment</a>
+      </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="confirmationMessage"></p>
+        <button id="confirmYes">Yes, proceed with team selection</button>
+        <button id="confirmNo">No, cancel all selections</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
